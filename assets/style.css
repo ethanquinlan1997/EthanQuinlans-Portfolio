@@ -97,42 +97,45 @@ p {
   
   /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
-    .container{
+    .container, h2{
       width: 100%;
     }
     .inline-line {
         width: 25%;
         height: 25%;
     }
-    p {
+    p, a {
         font-size: small;
     }
     ul{
         font-size: medium;
      
     }
+    
+
 }
 
 @media screen and (max-width: 576px) {
-    .container{
+    .container, h2{
         width: 100%;
+        padding-top: 3vh;
+       
       }
-      .inline-line {
+    
+      .inline-line, .float-left{
           width: 15%;
           height: 15%;
       }
       p {
           font-size: smaller;
       }
-      ul{
-          font-size: small;
-          display: block;
-          width: fit-content;
-          
-       
+      nav {
+        display: block;
+        width:fit-content;
       }
-  }
+   
   
-    /* Change the header color */
+  
+    }  
     
   
