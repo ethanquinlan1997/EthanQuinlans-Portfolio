@@ -91,13 +91,13 @@ p {
         font-size: medium;
     }
 
-    /* Change the header color */
+   
  
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
+  
   @media screen and (max-width: 768px) {
-    .container, h2{
+    .container{
       width: 100%;
     }
     .inline-line {
@@ -117,9 +117,8 @@ p {
 
 @media screen and (max-width: 576px) {
     .container, h2{
-        width: 100%;
-        padding-top: 3vh;
-       
+      width: auto;
+       margin: 5px;
       }
     
       .inline-line, .float-left{
