@@ -40,6 +40,8 @@ h1 {
     display: inline-block;
     margin-left: 25px;
 } 
+
+
 .container {
     width: 75%;
     margin-top: 8%;
@@ -76,5 +78,61 @@ p {
 
 }
 
+@media screen and (max-width: 992px) {
+    .container{
+      width: 50%;
+    }
+    .inline-line {
+        width: 50%;
+        height: 50%;
 
+    }
+    p {
+        font-size: medium;
+    }
 
+    /* Change the header color */
+ 
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .container{
+      width: 100%;
+    }
+    .inline-line {
+        width: 25%;
+        height: 25%;
+    }
+    p {
+        font-size: small;
+    }
+    ul{
+        font-size: medium;
+     
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+      }
+      .inline-line {
+          width: 15%;
+          height: 15%;
+      }
+      p {
+          font-size: smaller;
+      }
+      ul{
+          font-size: small;
+          display: block;
+          width: fit-content;
+          
+       
+      }
+  }
+  
+    /* Change the header color */
+    
+  
