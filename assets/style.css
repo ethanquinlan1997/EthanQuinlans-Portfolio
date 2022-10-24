@@ -7,21 +7,22 @@
 
 
 .header {
-    padding: 20px;
+  
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
 h1 {
-   
-     font-size: 35px;
-    text-shadow: 2px 0 #fff, -2px 0 rgb(87, 30, 114), 0 2px #fff, 0 -2px #fff,
-                 1px 1px rgb(255, 255, 255), -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+    font-size: 50px;
+    color: rgb(139, 35, 139);
+  text-decoration: underline;
+  text-decoration-color: black;
+    margin-bottom: 50px;
   }
 
 
 
-.header nav {
-    padding-top: 15px;
+nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,33 +35,39 @@ h1 {
 
  nav ul li{
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 20px;
+    border-style:groove;
+    border-color: purple;
+    padding: 3px;
+    border-width: 5px;
+    width: fit-content;
 } 
 
 .container {
     display:block;
-    margin: 25px;
+    margin-bottom: 70px;
 }
 .section{
+    display: block;
     text-align: center;
-    flex-direction: space-between;
     width: fit-content;
     margin: 5px;
-    padding: 17%;
+    padding: 10%;
   
 }
 
 h2 {
-    display: inline-block;
+   display: block;
+   margin: 5px;
     padding: 10px;
-    height: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    background-size: cover;
-    color: #e69ef5;
+    color: #9a48aa;
     font-size: 25px;
-    text-shadow: 2px 0 rgb(80, 164, 170), -2px 0 rgba(146, 189, 192, 0.514), 0 2px rgb(162, 107, 175), 0 -2px #fff,
-                 1px 1px rgba(59, 184, 146, 0.856), -1px -1px rgba(38, 78, 131, 0.808), 1px -1px #fff, -1px 1px rgb(28, 160, 212)
+    text-decoration: underline;
+    text-shadow: 2px 0 rgb(80, 164, 170), -2px 0 rgba(146, 189, 192, 0.514), 0 2px rgb(24, 7, 29), 0 -2px #fff,
+                 1px 1px rgba(33, 179, 135, 0.856), -1px -1px rgba(38, 78, 131, 0.808), 1px -1px #fff, -1px 1px rgb(28, 160, 212)
+    
+
    }
 
 a {
@@ -71,31 +78,60 @@ p {
     text-align: center;
     font-size: 20px;
 }
+.border {
+    border: width 1px;
+    border-style: solid;
+    border-color: purple;
+    padding: 1em;
+    background-color: aqua;
+    display: inline-block;
+}
 
 
 .float-left {
-    margin: 0px;
-   
+   display: inline-block;
+   margin-top: 0%;
+   border-style:groove;
+   border-color: rgb(19, 202, 172);
+   padding: 1px;
+   border-width: 5px;
+   width: fit-content;
 }
 
 .inline-line {
     margin-top: 5%;
 
 }
+.link {
+    background-color: aqua;
+    font-size: 20px;
+    text-decoration: underline;
+    color: blueviolet;
+    display: inline-block;
+}
+.link-title {
+    background-color: aqua;
+    margin: 2px;
+}
 
 
 @media screen and (max-width: 992px) {
     .container{
-      width: 100%;
+      display: inline-block;
+        width: 100%;
+      margin: 5px;
     }
-    .inline-line {
+    .inline-line{
         width: 50%;
-        height: 50%; }
-    
-        p, h2{
+        height: 50%;
+    }
+       p, h2,.link,.link-title, ul{
         font-size: medium;
     }
-
+    h1 {
+        font-size: 200%;
+    }
+ 
    
  
   }
@@ -110,7 +146,7 @@ p {
         width: 25%;
         height: 25%;
     }
-    p, a, h2{
+    p, a, h2, .link, .link-title{
         font-size: small;
     }
     ul{
@@ -125,21 +161,42 @@ p {
    
 
     .container {
-        margin-top: 5%;
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        margin: 1%;
     }
      h1, a{
        font-size: 55%;
-      }
+       
+    }
+    .link, .link-title, p{
+        font-size: 50%;
+    }
      .inline-line, .float-left{
           width: 20%;
           height: 20%;
       }
-    p {
-          font-size: 50%;
+      nav ul li {
+        margin-left: 5px;
+        border-width: 2px;
+        padding: 1px;
       }
+    h1 {
+        margin-bottom: 15px;
+        margin-top: 5px;
+        font-size: 100%;
+    }  
+
     h2{
-        font-size: medium;
+  
+        font-size: 65%;
+       
+        
       }
+   
+   
+     
      
     }
     
