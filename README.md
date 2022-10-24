@@ -14,9 +14,6 @@ This is my very first portfolio that I built from scratch. You get the chance to
 - GitHub Repository: https://github.com/ethanquinlan1997/EthanQuinlans-Portfolio.git
 - Live Website:  https://ethanquinlan1997.github.io/EthanQuinlans-Portfolio/
 
-## Credits
-
-
 
 ## Contribution
 
